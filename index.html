@@ -1,100 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LITHOS - Audiobook Player</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 500px;
-            text-align: center;
-        }
-        .logo {
-            margin-bottom: 40px;
-        }
-        .logo h1 {
-            font-size: 4rem;
-            color: #3FA9B5;
-            letter-spacing: 8px;
-            margin-bottom: 10px;
-        }
-        .logo p {
-            color: #888;
-            font-size: 1.1rem;
-            letter-spacing: 2px;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .links a {
-            display: block;
-            padding: 18px 30px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
-        .links a:hover {
-            background: rgba(63, 169, 181, 0.2);
-            border-color: #3FA9B5;
-            transform: translateY(-2px);
-        }
-        .footer {
-            margin-top: 60px;
-            color: #666;
-            font-size: 0.85rem;
-        }
-        .badge {
-            display: inline-block;
-            margin-top: 30px;
-        }
-        .badge img {
-            height: 60px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiLore — Legal</title>
+<meta name="description" content="Terms of Service and Privacy Policy for MiLore, the audiobook player by Mossglen Studio.">
+<style>
+  :root { --bg:#ECEDEF; --text:#1B1F24; --muted:#5B6470; --accent:#3498A8; --rule:#D9DCE1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#24272C; --text:#ECEDEF; --muted:#A9B1BB; --accent:#5FB3C1; --rule:#3A3F46; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif; line-height:1.65; font-size:17px; }
+  main { max-width:720px; margin:0 auto; padding:64px 24px 80px; }
+  .brand { font-size:14px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 8px; }
+  h1 { font-size:34px; line-height:1.15; margin:0 0 8px; font-weight:700; }
+  p { margin:0 0 12px; color:var(--muted); }
+  ul { list-style:none; padding:0; margin:28px 0 0; }
+  li { border-top:1px solid var(--rule); }
+  li:last-child { border-bottom:1px solid var(--rule); }
+  a.row { display:block; padding:18px 0; color:var(--text); text-decoration:none; font-weight:600; font-size:19px; }
+  a.row span { display:block; font-weight:400; font-size:15px; color:var(--muted); margin-top:2px; }
+  a.row:hover { color:var(--accent); }
+  footer { margin-top:40px; padding-top:20px; border-top:1px solid var(--rule); color:var(--muted); font-size:14px; }
+  footer a { color:var(--accent); text-decoration:none; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <h1>LITHOS</h1>
-            <p>Audiobook Player</p>
-        </div>
-
-        <div class="links">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-        </div>
-
-        <div class="badge">
-            <a href="https://play.google.com/store/apps/details?id=com.mossglen.lithos">
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
-            </a>
-        </div>
-
-        <div class="footer">
-            <p>© 2026 Mossglen. All rights reserved.</p>
-        </div>
-    </div>
+<main>
+  <p class="brand">MiLore</p>
+  <h1>Legal</h1>
+  <p>MiLore is an audiobook player for Android by Mossglen Studio. These are the documents that govern its use.</p>
+  <ul>
+    <li><a class="row" href="terms.html">Terms of Service<span>The agreement between you and Mossglen Studio.</span></a></li>
+    <li><a class="row" href="privacy-policy.html">Privacy Policy<span>What stays on your device, what reaches us, and how to turn it off.</span></a></li>
+  </ul>
+  <footer>
+    <p>&copy; 2026 Mossglen Studio &middot; <a href="mailto:support@mossglen.studio">support@mossglen.studio</a></p>
+  </footer>
+</main>
 </body>
 </html>
